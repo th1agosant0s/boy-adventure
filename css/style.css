@@ -41,6 +41,10 @@ body {
     animation: lobo 5s infinite;
 }
 
+.trem {
+    
+}
+
 .pedra-obstáculo{
     position: absolute;
 }

@@ -33,11 +33,12 @@ document.addEventListener('keydown', (event) => {
     updatePersonagemPosition();
   });
 
+back = 0
 function update(){
-  trem.style.left = trem.offsetLeft -= step + "px";
-  if(personagem.offsetTop < screen.height) {
-    posicaoVertical += step;
-  }
+  back += 20
+  document.body.style.backgroundPositionX =  back + "px";
+  trem.style.left = trem.offsetLeft - 20 + "px";
+  sth1 = trem.style.left
 
   updatePersonagemPosition();
   setTimeout(() => {
